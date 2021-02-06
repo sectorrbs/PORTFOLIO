@@ -1,0 +1,108 @@
+// main:../style.less
+.system {
+    &--fone {
+        background-color: #f7f7f7;
+        margin-top: 103px;
+    }
+    &__inner {
+        height: 894px;
+    }
+    &__content-left,
+    &__content-right {
+        width: 524px;
+        .font (17px, 25px, 400);
+        position: relative;
+        padding-left: 118px;
+    }
+    &__content-left::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: -21px;
+        background-image: url(../img/system_top_sleep.png);
+        width: 97px;
+        height: 117px;
+    }
+    &__content-right::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: -34px;
+        background-image: url(../img/system_top_awakening.png);
+        width: 97px;
+        height: 117px;
+    }
+    &__top-content {
+        padding-top: 150px;
+        margin-bottom: 150px;
+        height: 117px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__title {
+        .title();
+        margin-bottom: 59px;
+    }
+    &__item {
+        width: 218px;
+        height: 239px;
+        border-radius: 3px;
+        &:nth-child(1) {
+            background-image: url(../img/system_item1.png)
+        }
+        &:nth-child(2) {
+            background-image: url(../img/system_item2.png)
+        }
+        &:nth-child(3) {
+            background-image: url(../img/system_item3.png)
+        }
+        &:nth-child(4) {
+            background-image: url(../img/system_item4.png)
+        }
+        &:nth-child(5) {
+            background-image: url(../img/system_item5.png);
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                left: 46px;
+                bottom: -71px;
+                background-image: url(../img/item_line.png);
+                width: 1px;
+                height: 86px;
+            }
+        }
+    }
+    &__item-text {
+        padding: 49px 13px;
+        .font (16px, 25px, 400);
+    }
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 31px;
+    }
+    &__results {
+        height: 77px;
+        background-color: #ffffff;
+        border-radius: 3px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__results-link {
+        .font (19px, 25px, 600);
+        color: #0071e3;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            right: -341px;
+            top: 5px;
+            background-image: url(../img/results_arrow.png);
+            width: 311px;
+            height: 17px;
+        }
+    }
+}

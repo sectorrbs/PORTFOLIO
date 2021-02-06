@@ -1,0 +1,31 @@
+// main:../style.less
+.footer {
+    &--fone {
+        background-color: black;
+    }
+    &__inner {
+        height: 110px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__text {
+        .font (12px, 1.2, 300);
+        color: #727272;
+        width: 285px;
+        &-confd {
+            text-decoration: underline;
+            color: #727272;
+        }
+    }
+    &__phone {
+        color: #ffffff;
+        text-decoration: none;
+        border-bottom: 1px solid rgba(255, 255, 255, .5);
+    }
+    &__number {
+        .font (17px, 27px, 500);
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+}

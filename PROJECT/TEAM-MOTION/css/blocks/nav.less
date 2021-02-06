@@ -1,0 +1,71 @@
+// main:../style.less
+.menu {
+    display: flex;
+}
+
+.menu__list {
+    &+& {
+        padding-left: 41px;
+    }
+
+    &:active {
+        transform: scale(0.97);
+    }
+}
+
+.menu__link {
+    font-size: 17px;
+    line-height: 27px;
+    color: #ffffff;
+    text-decoration: none;
+
+    &:hover {
+        color: darken(#ffffff, 15%);
+    }
+}
+
+.menu__btn {
+    display: none;
+    width: 40px;
+    height: 30px;
+    cursor: pointer;
+    align-items: center;
+    position: relative;
+
+    span {
+        width: 100%;
+        height: 5px;
+        background-color: white;
+        border-radius: 10px;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 5px;
+        background-color: white;
+        border-radius: 10px;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 5px;
+        background-color: white;
+        border-radius: 10px;
+    }
+}
+
+@keyframes btn {
+    0% {
+        transform: rotateZ(90deg);
+    }
+
+    100% {
+        transform: rotateZ(0deg);
+    }
+}

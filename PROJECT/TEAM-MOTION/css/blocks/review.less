@@ -1,0 +1,110 @@
+// main:../style.less
+.review {
+    &__inner {}
+    &__title {
+        .title();
+        padding: 143px 0 55px;
+    }
+    &__resume {
+        margin-left: 6px;
+        margin-right: 7px;
+        height: 459px;
+        background-image: url(../img/review__fone.png);
+        border-radius: 5px;
+        padding-left: 48px;
+        padding-right: 48px;
+        position: relative;
+    }
+    &__name {
+        .font (18px, 27px, 700);
+        padding: 105px 0 18px;
+    }
+    &__position {
+        font-style: italic;
+        line-height: 27px;
+        padding-right: 180px;
+        padding-bottom: 14px;
+    }
+    &__content {
+        opacity: 0.76;
+        line-height: 27px;
+        padding-bottom: 14px;
+    }
+    &__totally {
+        .font (18px, 27px, 600);
+        color: #0071e3;
+        text-decoration: none
+    }
+    &__avatar {
+        position: absolute;
+        right: 48px;
+        top: 26px;
+    }
+    &__all {
+        .font (18px, 27px, 600);
+        padding: 14px 53px;
+        border: 2px solid #0071e3;
+        border-radius: 29px;
+        width: 222px;
+        height: 58px;
+        color: #0071e3;
+        text-decoration: none;
+        margin: 62px auto 95px;
+        display: block;
+        &:hover {
+            background-color: #fafafa;
+            color: #0058b0;
+            border: 2px solid #0058b0;
+        }
+    }
+}
+
+.slick-prev {
+    width: 59px;
+    height: 59px;
+    border: 1px solid #0071e3;
+    font-size: 0px;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 85px;
+    top: -110px;
+    &:focus {
+        outline: none;
+    }
+    &::before {
+        content: '';
+        width: 10px;
+        height: 19px;
+        background-image: url(../img/prew.png);
+    }
+}
+
+.slick-next {
+    width: 59px;
+    height: 59px;
+    border: 1px solid #0071e3;
+    font-size: 0px;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 5px;
+    top: -110px;
+    &:focus {
+        outline: none;
+    }
+    &::before {
+        content: '';
+        width: 10px;
+        height: 19px;
+        background-image: url(../img/next.png);
+    }
+}

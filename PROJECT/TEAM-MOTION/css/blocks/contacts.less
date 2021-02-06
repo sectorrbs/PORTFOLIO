@@ -1,0 +1,94 @@
+// main:../style.less
+.contacts {
+    &__inner {
+        height: 598px;
+        position: relative;
+        padding-top: 100px;
+    }
+    &__map {
+        position: absolute;
+    }
+    &__info {
+        width: 523px;
+        height: 388px;
+        opacity: 0.94;
+        background-color: #ffffff;
+        border-radius: 10px;
+        padding: 55px 87px;
+    }
+    &__title {
+        .title();
+        text-align: center;
+        margin-bottom: 49px;
+        line-height: 1;
+    }
+    &__phone {
+        .font (22px, 1, 300);
+        padding-left: 36px;
+        position: relative;
+        margin-bottom: 32px;
+        &::before {
+            content: '';
+            position: absolute;
+            background-image: url(../img/phone.png);
+            left: 0;
+            width: 21px;
+            height: 21px;
+            opacity: 0.25;
+            top: 2px;
+        }
+    }
+    &__email,
+    &__street {
+        .font (18px, 1, 300);
+        padding-left: 36px;
+        position: relative;
+        margin-bottom: 32px;
+    }
+    &__email::before {
+        content: '';
+        position: absolute;
+        background-image: url(../img/email.png);
+        left: 0;
+        width: 20px;
+        height: 15px;
+        opacity: 0.25;
+        top: 1px;
+    }
+    &__street::before {
+        content: '';
+        position: absolute;
+        background-image: url(../img/location.png);
+        left: 0;
+        width: 18px;
+        height: 26px;
+        opacity: 0.25;
+        top: 0px;
+    }
+    &__social {
+        display: flex;
+        justify-content: center;
+        
+    }
+}
+
+.social__link-vk,
+.social__link-fac,
+.social__link-inst,
+.social__link-tel,
+.social__link-tw {
+    width: 44px;
+    height: 44px;
+    background-color: #c9c9c9;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 8px 0;
+    &:hover {
+        background-color: #0071e3;
+    }
+    &:active {
+        background-color: darken(#0071e3, 15%);
+}
+}

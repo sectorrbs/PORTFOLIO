@@ -1,0 +1,106 @@
+// main:../style.less
+.articles {
+    &--fone {
+        background-color: #f7f7f7;
+    }
+    &__inner {
+        padding-bottom: 111px;
+    }
+    &__item {
+        position: relative;
+        max-width: 364px;
+        height: 610px;
+        margin: 0 8px;
+        background-color: #ffffff;
+        background-image: url(../img/articles_fone-1.png);
+        background-repeat: no-repeat;
+        object-fit: cover;
+        border-radius: 0px 0px 5px 5px;
+        padding: 209px 0 29px;
+        &--fone2 {
+            background-image: url(../img/articles_fone_2.png);}
+        &--fone3 {
+            background-image: url(../img/articles_fone_3.png);}
+    
+    }
+    
+    &__title {
+        .font (38px, 54px, 700);
+        padding-top: 123px;
+        padding-bottom: 76px;
+    }
+    &__date {
+        width: 160px;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #000000;
+        opacity: 0.47;
+        .font (21px, 27px, 300);
+        color: #ffffff;
+        margin-bottom: 22px;
+        padding-left: 29px;
+    }
+    &__text {
+        padding: 0 38px 0 29px;
+        margin-bottom: 27px;
+        .font (18px, 27px, 700);
+    }
+    &__content {
+        padding: 0 38px 0 29px;
+        margin-bottom: 30px;
+        .font (16px, 27px, 300);
+    }
+    &__all {
+        text-decoration: none;
+        .font (18px, 27px, 500);
+        color: #0071e3;
+        position: relative;
+        padding-left: 29px;
+        &::after {
+            content: '';
+            background-image: url(../img/articles__arrow.png);
+            position: absolute;
+            right: -30px;
+            top: 6px;
+            width: 20px;
+            height: 14px;
+        }
+    }
+    &__slider {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 4px;
+    }
+    &__totally {
+        .font (18px, 27px, 600);
+        text-decoration: none;
+        color: #0071e3;
+        width: 222px;
+        height: 58px;
+        border: 2px solid #0071e3;
+        border-radius: 29px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 66px auto 0;
+        &:hover {
+            background-color: #fafafa;
+            color: #0058b0;
+            border: 2px solid #0058b0;
+        }
+    }
+    &__shadow {
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+.padding--text-1 {
+    padding-bottom: 53px;
+}
+
+.padding--text-2 {
+    padding-bottom: 78px;
+}

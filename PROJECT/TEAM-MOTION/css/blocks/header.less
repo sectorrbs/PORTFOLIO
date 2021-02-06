@@ -1,0 +1,36 @@
+// main:../style.less
+.header {
+    height: 58px;
+    background-color: #120f10;
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 58px;
+    }
+    &__button:active {
+        transform: scale(0.995);
+    }
+    &__btn {
+        font-size: 17px;
+        line-height: 27px;
+        font-weight: 400;
+        color: #120f10;
+        padding: 13px 30px 14px 29px;
+        background-color: #ffffff;
+        border-radius: 22px;
+        text-decoration: none;
+        &:hover {
+            background-color: darken(#ffffff, 5%);
+            opacity: .95;
+        }
+        &:active {
+            background-color: darken(#ffffff, 15%);
+        }
+    }
+    &__searsh {
+        height: 22px;
+        width: 21px;
+        margin-right: 17px;
+    }
+}
